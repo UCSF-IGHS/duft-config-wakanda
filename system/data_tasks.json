@@ -1,0 +1,30 @@
+{
+    "dataTasks": [
+        {
+            "id": "EPMS_ETL",
+            "name": "EPMS ETL",
+            "description": "Runs the daily EPMS Data Analysis Scripts",
+            "pythonFile": "EPMS ETL.ipynb",
+            "dataConnections": [
+                "ANA",
+                "EPMS"
+            ],
+            "params": {
+                "name": "silent",
+                "value": "yes"
+            }
+        },
+        {
+            "id": "SAMPLE",
+            "name": "Sample Data Task",
+            "description": "A sample data task that does nothing",
+            "pythonFile": "sample_task.py",
+            "hideInUI": true,
+            "dataConnections": [],
+            "params": {
+                "name": "Daenerys",
+                "sleep_time": 0.5
+            }
+        }
+    ]
+}

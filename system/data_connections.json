@@ -1,0 +1,92 @@
+{
+	"dataConnections": 
+	[
+		{
+			"id":"EPMS",
+			"name":"EPMS",
+			"description":"The Quantum EPMS database that holds the patient records",
+			"params":[
+				{
+					"name":"server",
+					"type":"text",
+					"label":"Server name"
+				},
+				{
+					"name":"username",
+					"type":"text",
+					"label":"User name"
+				},		
+				{
+					"name":"password",
+					"type":"password",
+					"label":"Password"
+				},
+				{
+					"name":"port",
+					"type":"integer",
+					"label":"Port"
+				},
+				{
+					"name":"database",
+					"type":"text",
+					"label":"Database name"
+				}
+			]
+		},
+		{
+			"id":"NDR",
+			"name":"National Data Repository",
+			"description":"The server where CBS data should be sent to",
+			"params":[
+				{
+					"name":"server",
+					"type":"url",
+					"label":"Server URL"
+				},
+				{
+					"name":"username",
+					"type":"text",
+					"label":"User name"
+				},		
+				{
+					"name":"password",
+					"type":"password",
+					"label":"Password"
+				}		
+			]
+		},
+		{
+			"id":"ANA",
+			"name":"Analysis Database",
+			"description":"The database where all analysis data will be stored.",
+			"allowVisualiser":"True",
+			"params":[
+				{
+					"name":"server",
+					"type":"text",
+					"label":"Server name"
+				},
+				{
+					"name":"username",
+					"type":"text",
+					"label":"User name"
+				},		
+				{
+					"name":"password",
+					"type":"password",
+					"label":"Password"
+				},
+				{
+					"name":"port",
+					"type":"integer",
+					"label":"Port"
+				},
+				{
+					"name":"database",
+					"type":"text",
+					"label":"Database name"
+				}
+			]
+		}	
+	]
+}
