@@ -20,7 +20,10 @@
             "description": "A sample data task that does nothing",
             "pythonFile": "sample_task.py",
             "hideInUI": true,
-            "dataConnections": [],
+            "dataConnections": [
+                "ANA",
+                "MyOwnConnection"
+            ],
             "params": {
                 "name": "Daenerys",
                 "sleep_time": 0.5

@@ -1,0 +1,23 @@
+{
+    "dataConnectionParameters": {
+        "EMPS": {
+            "server": "127.0.0.1",
+            "username": "user",
+            "password": "mysecretword",
+            "port": "5432",
+            "database": "production"
+        },
+        "ANA": {
+            "server": "127.0.0.1",
+            "username": "user",
+            "password": "mysecretword",
+            "port": "5432",
+            "database": "analysis"
+        },
+        "NDR": {
+            "server": "https://www.myndr.com/api/v2",
+            "username": "user",
+            "password": "mysecretword"
+        }
+    }
+}
