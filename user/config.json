@@ -12,7 +12,9 @@
             "username": "user",
             "password": "mysecretword",
             "port": "5432",
-            "database": "analysis"
+            "database": "analysis",
+            "sqlite3file": "wakanda.sqlite",
+            "type": "sqlite3"
         },
         "NDR": {
             "server": "https://www.myndr.com/api/v2",

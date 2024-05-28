@@ -59,13 +59,23 @@
 			"id":"ANA",
 			"name":"Analysis Database",
 			"description":"The database where all analysis data will be stored.",
-			"allowVisualiser":"True",
+			"allowQueryEngine":"True",
 			"params":[
+				{
+					"name":"type",
+					"type":"text",
+					"label":"The type of connection (MSSQL | MySQL | PosgtresSQL | sqlite3)"
+				},				
 				{
 					"name":"server",
 					"type":"text",
 					"label":"Server name"
 				},
+				{
+					"name":"sqlite3file",
+					"type":"text",
+					"label":"Name of the SQLite file"
+				},				
 				{
 					"name":"username",
 					"type":"text",
