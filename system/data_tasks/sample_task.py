@@ -4,7 +4,7 @@ import sys
 from data_task_tools import something
 
 something()
-from flask_app.dte.dte_tools import assert_dte_tools_available, get_duft_config, get_resolved_parameters_for_connection, set_data_task_name, log_error, log_message
+from src.dte.dte_tools import assert_dte_tools_available, get_duft_config, get_resolved_parameters_for_connection, set_data_task_name, log_error, log_message  # noqa: E402
 
 
 params = {}
