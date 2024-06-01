@@ -4,15 +4,15 @@ import sys
 from data_task_helpers import something
 
 something()
-from src.dte.dte_tools import assert_dte_tools_available, get_resolved_parameters_for_connection, initialise_data_task, log_error, log_message, find_json_arg  # noqa: E402
-
+from src.dte.data_task_tools import assert_dte_tools_available, get_resolved_parameters_for_connection, initialise_data_task, log_error, log_message, find_json_arg, DataTaskEnvironment  # noqa: E402
 
 params = {}
+environment: DataTaskEnvironment = None
 
 if __name__ == "__main__":
     
     json_args = find_json_arg(sys.argv)
-    initialise_data_task("Sample Data Task", params=json_args)
+    environment = initialise_data_task("Sample Data Task", params=json_args)
     
     params["name"] = json_args.get("name", "No parameters given!")
     params["sleep_time"] = json_args.get("sleep_time", 0.2)
@@ -32,7 +32,7 @@ def sample_task():
         # Send intermediate update to the client
         
         log_message(f'Progress for %s: {i+1}/10' % params["name"])
-    log_message('Script completed!')
+    log_message('Script completed! %s' % environment.current_data_task_name)
         
 
 
