@@ -11,8 +11,9 @@ params = {}
 
 if __name__ == "__main__":
     
-    initialise_data_task("Sample Data Task")
     json_args = find_json_arg(sys.argv)
+    initialise_data_task("Sample Data Task", params=json_args)
+    
     params["name"] = json_args.get("name", "No parameters given!")
     params["sleep_time"] = json_args.get("sleep_time", 0.2)
     
@@ -23,7 +24,7 @@ if __name__ == "__main__":
 def sample_task():
     resolved_parameters = get_resolved_parameters_for_connection("ANA")
     log_message('Script starting!')
-    log_message("Using parameters: %s" % resolved_parameters)
+    log_message("Using Data Connection Parameters: %s" % resolved_parameters)
     
     for i in range(10):
         # Simulate a long-running task
