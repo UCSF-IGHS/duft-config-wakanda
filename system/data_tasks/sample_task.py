@@ -1,10 +1,10 @@
 import time
-import json
 import sys
+
 from data_task_helpers import something
 
 something()
-from src.dte.dte_tools import assert_dte_tools_available, get_resolved_parameters_for_connection, initialise_data_task, log_error, log_message  # noqa: E402
+from src.dte.dte_tools import assert_dte_tools_available, get_resolved_parameters_for_connection, initialise_data_task, log_error, log_message, find_json_arg  # noqa: E402
 
 
 params = {}
@@ -12,17 +12,13 @@ params = {}
 if __name__ == "__main__":
     
     initialise_data_task("Sample Data Task")
+    json_args = find_json_arg(sys.argv)
+    params["name"] = json_args.get("name", "No parameters given!")
+    params["sleep_time"] = json_args.get("sleep_time", 0.2)
     
-    # Read parameters from the command line argument
-    try:
-        params = json.loads(sys.argv[1])
-        params["name"] is not None
-        params["sleep_time"] is not None
-    except (IndexError, KeyError):
+    if not json_args:
         log_error("No parameters given!")
-        params = {"name": "No Param Given!!", "sleep_time": 0.2}
         
-    
 
 def sample_task():
     resolved_parameters = get_resolved_parameters_for_connection("ANA")
