@@ -20,6 +20,12 @@
             "server": "https://www.myndr.com/api/v2",
             "username": "user",
             "password": "mysecretword"
+        },
+        "UNITTEST": {
+            "server": "test://self",
+            "username": "user",
+            "password": "mysecretword",
+            "unitTested": "2024-06-02 18:08:18.036720"
         }
     }
 }
