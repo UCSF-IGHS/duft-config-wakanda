@@ -22,6 +22,12 @@
             "password": "mysecretword"
         },
         "UNITTEST": {
+            "server": "test://self3333",
+            "username": "user",
+            "password": "mysecretword333",
+            "unitTested": "2024-06-02 18:08:18.036720"
+        },
+        "UNITTEST_SAFECOPY": {
             "server": "test://self",
             "username": "user",
             "password": "mysecretword",
