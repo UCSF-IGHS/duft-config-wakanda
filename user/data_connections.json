@@ -33,9 +33,9 @@
       ]
     },
     {
-      "id": "OPENMRS",
-      "name": "Openmrs Database",
-      "description": "The database where all openmrs data will be stored.",
+      "id": "MYSQL_TEST",
+      "name": "Mysql Database",
+      "description": "The database where all mysql data will be stored.",
       "allowQueryEngine": "True",
       "params": [
         {
@@ -71,7 +71,7 @@
       ]
     },
     {
-      "id": "POSGRS",
+      "id": "POSTGRRESQL_TEST",
       "name": "Postgres Database",
       "description": "The database where all postgres data will be stored.",
       "allowQueryEngine": "True",

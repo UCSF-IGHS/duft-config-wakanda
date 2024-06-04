@@ -33,7 +33,7 @@
       "password": "mysecretword",
       "unitTested": "2024-06-02 18:08:18.036720"
     },
-    "OPENMRS": {
+    "MYSQL_TEST": {
       "server": "127.0.0.1",
       "username": "root",
       "password": "Namibia23",
@@ -41,7 +41,7 @@
       "database": "ptracker",
       "type": "mysql"
     },
-    "POSGRS": {
+    "POSTGRRESQL_TEST": {
       "server": "127.0.0.1",
       "username": "postgres",
       "password": "mysecretpassword",
