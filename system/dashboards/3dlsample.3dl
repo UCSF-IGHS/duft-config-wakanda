@@ -1,0 +1,9 @@
+<Dashboard>
+      <Filters>
+        <Filter name="location" values="USA,Canada,UK" />
+        <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+          <Visual1 />
+          <Visual3 />
+        </DataContainer>
+      </Filters>
+    </Dashboard>
