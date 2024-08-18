@@ -5,7 +5,22 @@
         "dashboard": "/"
     },
     "menu": [
-
+      {
+        "title": "3DL Dashboards",
+        "icon": "dashboards-icon",
+        "dashboards": [
+          {
+            "title": "3DL Dashboard 1",
+            "icon": "dashboard-icon",
+            "dashboard": "/dashboard/3dlsample"
+          },
+          {
+            "title": "Sub Dashboard 2",
+            "icon": "dashboard-icon",
+            "dashboard": "/dashboard/3dlsample-2"
+          }
+        ]
+      },
     {
       "title": "{API} DB 1",
       "icon": "dashboard-icon",

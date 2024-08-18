@@ -1,0 +1,79 @@
+<Dashboard>
+  <Filters>
+    <Filter name="gender" values="Male,Female" />
+    <Filter
+      name="Drug regimen"
+      values_query="SELECT art_regimen_drugs FROM dim_art_regimen"
+    />
+    <DataContainer staticData={["Apple", "Banana", "Cherry"]}>
+      <Visual1 />
+      <Visual3 />
+      <Filters>
+        <Filter name="occupation" values_query="SELECT * FROM dim_age_group" />
+        <DataContainer query="SELECT * FROM dim_age_group"></DataContainer>
+      </Filters>
+    </DataContainer>
+    <Section title="JSON Visual">
+      <DataContainer query="SELECT * FROM dim_age_group"></DataContainer>
+    </Section>
+    <Section title="Tiles">
+      <div style={{ display: "flex", flexWrap: "wrap", margin: "20px 0" }}>
+        <DataContainer staticData={[1200]}>
+          <Visual5
+            title="Total Users"
+            backgroundColor="#e0f7fa"
+            color="#00796b"
+          />
+        </DataContainer>
+        <DataContainer staticData={[300]}>
+          <Visual5
+            title="Active Sessions"
+            backgroundColor="#f3e5f5"
+            color="#6a1b9a"
+          />
+        </DataContainer>
+        <DataContainer staticData={[12500]}>
+          <Visual5 title="Revenue" backgroundColor="#fff3e0" color="#ef6c00" />
+        </DataContainer>
+      </div>
+    </Section>
+    <Section title="Charts">
+      <DataContainer
+        staticData={[
+          { category: "Apples", value: 30 },
+          { category: "Bananas", value: 40 },
+          { category: "Cherries", value: 25 },
+        ]}
+      >
+        <Visual4 colors={["#FF4560", "#775DD0", "#FEB019"]} />
+      </DataContainer>
+      <DataContainer
+        staticData={[
+          { category: "Apples", value: 30 },
+          { category: "Bananas", value: 40 },
+          { category: "Cherries", value: 25 },
+        ]}
+      >
+        <DataTable />
+      </DataContainer>
+    </Section>
+    <Section>
+      <DataContainer
+        staticData={[
+          { category: "Apples", type: "fruit", value: 30 },
+          { category: "Bananas", type: "fruit", value: 40 },
+          { category: "Cherries", type: "fruit", value: 25 },
+          { category: "Chocolate", type: "vice", value: 16 },
+          { category: "Coffee", type: "vice", value: 49 },
+        ]}
+      >
+        <PivotTable />
+      </DataContainer>
+    </Section>
+    <Section>
+      <DataContainer query="SELECT * from dim_client LIMIT 1000 ">
+        <PivotTable />
+      </DataContainer>
+    </Section>
+  </Filters>
+</Dashboard>
