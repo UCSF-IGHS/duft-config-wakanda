@@ -1,0 +1,50 @@
+<Dashboard title="My Tabbed Dashboard">
+    <Filters>
+        <Filter name="location" values="USA,Canada,UK" />
+        <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+            <Filter name="location" values="USA,Canada,UK" />
+        </DataContainer>
+    </Filters>
+    <Body>
+        <TabSet>
+            <Tab>
+                <TabHeader>Tab title</TabHeader>
+                <Row>
+                    <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+                        <Visual1 />
+                        <Visual3 />
+                    </DataContainer>
+                </Row>
+                <Row>
+                    <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+                        <Visual1 />
+                        <Markdown>Some text</Markdown>
+                    </DataContainer>
+                    <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+                        <Visual3 />
+                    </DataContainer>
+                </Row>
+            </Tab>
+            <Tab>
+                <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+                    <TabHeader>Tab title</TabHeader>
+                </DataContainer>
+                <Row>
+                    <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+                        <Visual1 />
+                        <Visual3 />
+                    </DataContainer>
+                </Row>
+                <Row>
+                    <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+                        <Visual1 />
+                        <Markdown>Some text</Markdown>
+                    </DataContainer>
+                    <DataContainer staticData={['New York', 'Los Angeles', 'Toronto']}>
+                        <Visual3 />
+                    </DataContainer>
+                </Row>
+            </Tab>
+        </TabSet>
+    </Body>
+</Dashboard>
