@@ -1,1 +1,0 @@
-SELECT SUM(new_cases) FROM vw_art_cascade_for_tiles;

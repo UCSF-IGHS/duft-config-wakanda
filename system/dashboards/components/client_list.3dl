@@ -1,1 +1,12 @@
-<SmartDataTable />
+<InfiniteScrollTable detailsTitle="Patient Details" id="table1" exportData="true" >
+
+    <ContextDetailsView columnName='client_id'>
+        <DataProvider>
+        <QueryData transpose='true'>
+            SELECT * from fact_sentinel_event WHERE client_id=&#123;client_id&#125;
+        </QueryData>
+        <InfiniteScrollTable variant='plain' />
+        </DataProvider>
+    </ContextDetailsView>
+
+</InfiniteScrollTable>
