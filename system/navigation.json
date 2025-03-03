@@ -1,96 +1,48 @@
 {
   "settings": {
-    "appName": "DUFT (configurable)",
-    "footer": "Configurable footer text",
-    "showSettings": "authenticatedOnly",
-    "showAbout": "true"
+    "appName": "DUFT",
+    "footer": "Configurable footer text"
   },
   "home": {
-    "title": "Home",
-    "icon": "home-icon",
-    "dashboard": "/dashboard/home"
+      "title": "Home",
+      "icon": "home-icon",
+      "dashboard": "/dashboard/home"
   },
   "menu": {
-    "header": "dashboards (configurable)",
+    "header": "Data",
     "items": [
       {
-        "title": "3DL Dashboards",
-        "icon": "dashboards-icon",
-        "dashboards": [
-          {
-            "title": "3DL Dashboard 1",
-            "icon": "dashboard-icon",
-            "dashboard": "/dashboard/3dlsample"
-          },
-          {
-            "title": "3DL Dashboard 2",
-            "icon": "dashboard-icon",
-            "dashboard": "/dashboard/3dlsample-2"
-          },
-          {
-            "title": "Reference 3DL ",
-            "icon": "dashboard-icon",
-            "dashboard": "/dashboard/reference3dl"
-          },
-          {
-            "title": "Tab Dashboard",
-            "icon": "dashboard-icon",
-            "dashboard": "/dashboard/3dlsample-tabs"
-          },       
-          {
-            "title": "Filter Dashboard",
-            "icon": "dashboard-icon",
-            "dashboard": "/dashboard/3dlfilters"
-          },
-          {
-            "title": "Preview query",
-            "icon": "dashboard-icon",
-            "dashboard": "/dashboard/3dlpreview-query"
-          }
-        ]
+        "title": "New Cases",
+        "icon": "dashboard-icon",
+        "dashboard": "/dashboard/new"
       },
       {
-        "title": "{API} More",
+        "title": "ART",
         "icon": "dashboards-icon",
-        "dashboards": [
-          {
-            "title": "Sub Dashboard 1",
-            "icon": "dashboard-icon",
-            "dashboard": "/a"
-          },
-          {
-            "title": "Sub Dashboard 2",
-            "icon": "dashboard-icon",
-            "dashboard": "/b"
-          },
-          {
-            "title": "Sub Dashboard 3",
-            "icon": "dashboard-icon",
-            "dashboard": "/c"
-          },
-          {
-            "title": "Sub Dashboard 4",
-            "icon": "dashboard-icon",
-            "dashboard": "/d"
-          },
-          {
-            "title": "APIs",
-            "icon": "hashtag-icon",
-            "dashboard": "/api"
-          }
-        ]
+        "dashboard": "/dashboard/initiated"
+      },
+      {
+        "title": "Viral Load",
+        "icon": "dashboards-icon",
+        "dashboard": "/dashboard/vl"
+      },
+      {
+        "title": "Preview query",
+        "icon": "dashboard-icon",
+        "dashboard": "/dashboard/3dlpreview-query"
       }
+      
     ]
   },
   "dataTasks": {
-    "header": "actions (configurable)",
+    "header": "actions",
     "items": [
       {
         "title": "Refresh data",
         "icon": "update-icon",
         "task": "SAMPLE-NOTEBOOK",
         "dashboard": "refresh-data",
-        "prompt": "Are you sure you want to refresh the data?"
+        "prompt": "Note this will update the wakanda data on display"
       },
       {
         "title": "Upload data",
@@ -98,7 +50,7 @@
         "task": "UPLOAD",
         "dashboard": "upload-data",
         "prompt": "Are you sure you want to upload the data?"
-      }      
+      }
     ]
   }
 }
