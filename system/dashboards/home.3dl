@@ -478,8 +478,14 @@
         <Filters>
             <Filter caption="Gender" name="gender" data="gender_data" />
             <Filter caption="Age Group" name="age_group" data="age_group_data" />
-            <Filter caption="2021" name="year" data="year_data" />
+            <Filter caption="Year" name="year" data="year_data" />
         </Filters>
+
+        <Actions>
+            <Action dataTask="UPLOAD-PARAM-NOTEBOOK" param="year">
+                Send annual data to DHIS2
+            </Action>
+        </Actions>
 
         <Grid>
             <Row columns="2" largeColumns="4">
@@ -584,8 +590,14 @@
         <Filters>
             <Filter caption="Gender" name="gender" data="gender_data" />
             <Filter caption="Age Group" name="age_group" data="age_group_data" />
-            <Filter caption="2021" name="year" data="year_data" />
+            <Filter caption="Year" name="year" data="year_data" />
         </Filters>
+
+        <Actions>
+            <Action dataTask="UPLOAD-PARAM-NOTEBOOK" param="year">
+                Send annual data to DHIS2
+            </Action>
+        </Actions>
 
         <Grid>
             <Row columns="2" largeColumns="4">
@@ -666,8 +678,14 @@
         <Filters>
             <Filter caption="Gender" name="gender" data="gender_data" />
             <Filter caption="Age Group" name="age_group" data="age_group_data" />
-            <Filter caption="2021" name="year" data="year_data" />
+            <Filter caption="Year" name="year" data="year_data" />
         </Filters>
+
+        <Actions>
+            <Action dataTask="UPLOAD-PARAM-NOTEBOOK" param="year">
+                Send annual data to DHIS2
+            </Action>
+        </Actions>
 
         <Grid>
             <Row columns="2" largeColumns="3">
@@ -744,8 +762,14 @@
         <Filters>
             <Filter caption="Gender" name="gender" data="gender_data" />
             <Filter caption="Age Group" name="age_group" data="age_group_data" />
-            <Filter caption="2021" name="year" data="year_data" />
+            <Filter caption="Year" name="year" data="year_data" />
         </Filters>
+
+        <Actions>
+            <Action dataTask="UPLOAD-PARAM-NOTEBOOK" param="year">
+                Send annual data to DHIS2
+            </Action>
+        </Actions>
 
         <Grid>
             <Row columns="2" largeColumns="4">
