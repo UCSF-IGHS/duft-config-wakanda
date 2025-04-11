@@ -1,0 +1,3 @@
+This AI model is designed to interpret natural language questions and generate meaningful responses based on public health data. It enables researchers, policymakers, and practitioners to explore trends, identify gaps, and gain actionable insights — all through simple, conversational questions.
+
+Whether you're tracking disease patterns, analyzing intervention outcomes, or supporting evidence-based decision-making, this model helps translate complex data into clear, understandable answers.
