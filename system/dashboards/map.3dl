@@ -1,0 +1,31 @@
+<Dashboards>
+  <Datasets>
+    <SQLData name="facility_type_data" queryName="facility_type" />
+    <SQLData name="keph_level_data" queryName="keph_level" />
+
+    <SQLData
+      name="initiated_detailed_data"
+      queryName="facility_list"
+      filterFrom="facility_type, keph_level, operational_status"
+    /> 
+  </Datasets>
+  <Dashboard
+    tabName="MAP"
+    title="Facility Distribution"
+  >
+    <Filters>
+      <Filter
+        caption="Facility Type"
+        name="facility_type"
+        data="facility_type_data"
+      />
+      <Filter caption="Keph Level" name="keph_level" data="keph_level_data" />
+    </Filters>
+    <Grid>
+      <ClusterMap
+        data="initiated_detailed_data"
+        toolTipColumns="facility_name, facility_type, hiv_diagnosed"
+      />
+    </Grid>
+  </Dashboard>
+</Dashboards>;
